@@ -1,4 +1,34 @@
+d
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+}
+
+
 #menu-responsive {
-    display: inline;
     margin-top: 15px;
+    width: 40px;
+    float: right;
+    
+
+}
+.imagenes{
+    align-items:center;
+    display: block
+    ;
+   
+
+}
+#text-white{
+    color: red;
+}
+.centrar{
+    text-align: center;
+}
+.text{
+    text-transform: uppercase;
+}
+.cuadrados{
 }
