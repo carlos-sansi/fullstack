@@ -128,7 +128,13 @@ body {
 
     }
 }
-
+.banner-top {
+    background-image:url(../img/Banner-home.png);
+    background-position: top left;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 180px;
+}
 /*@media(min-width:768px) {
     body {
         background-color: var(--colorPrincipal);
