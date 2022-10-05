@@ -89,14 +89,14 @@ body {
     display: flex;
     flex-direction: row;
     background-color: var(white);
-    justify-content: space-between
+    justify-content:space-around
 
 }
 .nav-secundario {
     display: flex;
     flex-direction: row;
     background-color: var(white);
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 
@@ -114,7 +114,7 @@ body {
 @media(min-width:768px) {
     .contenedor {
 
-        width: 80rem;
+        width: 70rem;
         padding-top: 10%;
     }
 }
