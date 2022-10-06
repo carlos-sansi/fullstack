@@ -7,7 +7,18 @@ html {
     font-size: 62.5%;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+    box-sizing: inherit;
 }
+*,*::before,*::after{
+box-sizing: inherit;
+}
+/*box-sizing: border-box;
+    box-sizing: inherit;
+}
+*,*::before,*::after{
+box-sizing: inherit;
+} esto hace que tenga parrafos o caulquier cosa Pàra que no la copién a esto se le llama seudocodigo*/
 
 body {
     font-size: 16px;
@@ -23,7 +34,7 @@ body {
 }
 
 #text-white {
-    color: red;
+    color: white;
 }
 
 .centrar {
@@ -91,6 +102,7 @@ body {
     background-color: var(white);
     justify-content:space-around
 
+
 }
 .nav-secundario {
     display: flex;
@@ -106,14 +118,14 @@ body {
     float: right;
 }
     .contenedor {
-
+        list-style: none;
         width: 111rem;
         padding-top: 10%;
     }
 
-@media(min-width:768px) {
+@media(max-width:768px) {
     .contenedor {
-
+        list-style: none;
         width: 70rem;
         padding-top: 10%;
     }
@@ -125,18 +137,46 @@ body {
         padding-top: 10%;
         display: flex;
         flex-direction: column;
+        margin: left 40px;
 
     }
 }
-.banner-top {
-    background-image:url(../img/Banner-home.png);
-    background-position: top left;
-    background-size: cover;
-    padding-top: 80px;
-    padding-bottom: 180px;
+
+@media (max-width: 480px) {
+    .banner-top {
+        background-image:url(../img/Banner-home.png);
+        background-position: top left;
+        background-size: contain;
+        padding-top: 80px;
+        padding-bottom: 180px;
+        background-repeat: no-repeat;
+    
+    }
 }
+@media (min-width: 480px) {
+    .banner-top {
+        background-image:url(../img/Banner-home.png);
+        background-position: top left;
+        background-size: cover;
+        padding-top: 80px;
+        padding-bottom: 180px;
+    }
+}
+/*main{color:;}*/
+
+/*h1::before{
+    content: "Esto no es contenido";
+}*/
 /*@media(min-width:768px) {
     body {
         background-color: var(--colorPrincipal);
     }
 }*/
+.contenedor-fondo{
+    width: 100%;
+    min-height: 180px;
+    background-image: url(../img/trapecio.png);
+    background-position: left center;
+    padding: 30px 20px 30px 20px;
+    background-repeat: no-repeat;
+}
