@@ -27,7 +27,9 @@ body {
     font-weight: 400;
     color: #02052F;
 }
-
+.font-weight-light {
+    font-weight: 300;
+}
 
 .imagenes {
     align-items: center;
@@ -36,12 +38,13 @@ body {
 
 }
 
-#text-white {
+.text-white {
     color: white;
 }
 
 .centrar {
     text-align: center;
+    display: inline center;
 }
 
 .text {
@@ -84,12 +87,12 @@ body {
     vertical-align: middle;
     box-sizing: border-box;
     white-space: nowrap;
-    text-transform: uppercase !important;
+    text-transform: uppercase;
 
 }
 
 .boton-info:hover {
-    background-color: #1795a8 !important;
+    background-color: #1795a8;
 }
 
 .color_pink {
@@ -184,38 +187,35 @@ body {
     background-repeat: no-repeat;
 }
  .contenedor-zona{
-    width: 100%;
     border-radius: 10px;
     background-color: #f2f2f4;
     margin-top: 1rem !important;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-rows:auto;
     -webkit-box-shadow: 10px 10px 21px 4px rgba(133,4,36,1);
     -moz-box-shadow: 10px 10px 21px 4px rgba(133,4,36,1);
     box-shadow: 10px 10px 21px 4px rgba(133,4,36,1);
  }
  .contenedor-parte{
     display: grid;
-    grid-template-columns: 50% 50%;
-
-
- }
+    grid-template-columns: 1fr 1fr; }
  .bg-generico{
     background-color: #02052F;
     color: #fff;
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px !important;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 12px;
     padding-left: 12px;
     font-weight: 600;
-    font-size: 14px;
-    width: 50%;
+    font-size: 14px;    
     text-align: center;  
     border: 1px solid transparent;
-
-
- }
+    text-decoration: underline;
+    border-radius: 0px;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    box-sizing: border-box; }
  .bg-verde {
     background-color: #00E497;
     border-bottom-left-radius: 10px !important;
@@ -225,35 +225,26 @@ body {
     color: #fff;
     text-decoration: underline;
     font-weight: 600;
-    font-size: 14px;
-    width: 50% !important;
-    float: left;
+    font-size: 14px;    
     text-align: center;
-    white-space: nowrap;
     vertical-align: middle;
-    display: inline-block !important;
     border: 1px solid transparent;
-    box-sizing: border-box;
-}
+    box-sizing: border-box;}
 .bg-violeta {
     background-color: #CA1690;
-    border-bottom-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important ;
     border-radius: 0px;
     padding-top: 20px;
     padding-bottom: 20px;
     color: #fff;
     text-decoration: underline;
     font-weight: 600;
-    font-size: 14px;
-    width: 50% !important;
-    float: left !important;
+    font-size: 14px; 
     text-align: center;
     white-space: nowrap;
-    vertical-align: middle;
-    display: inline-block !important;
+    vertical-align: middle;    
     border: 1px solid transparent;
-    box-sizing: border-box;
-}
+    box-sizing: border-box;}
 .bg-azul {
     background-color: #5877FD;
     border-bottom-left-radius: 10px !important;
@@ -263,16 +254,13 @@ body {
     color: #fff;
     text-decoration: underline;
     font-weight: 600;
-    font-size: 14px;
-    width: 50% !important;
-    float: left !important;
+    font-size: 14px;    
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
     display: inline-block !important;
     border: 1px solid transparent;
-    box-sizing: border-box;
-}
+    box-sizing: border-box;}
 .bg-naranja {
     background-color: #F76666;
     border-bottom-left-radius: 10px !important;
@@ -283,21 +271,20 @@ body {
     text-decoration: underline;
     font-weight: 600;
     font-size: 14px;
-    width: 50% !important;
-    float: left !important;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
     border: 1px solid transparent;
-    box-sizing: border-box;
+    box-sizing: border-box;}
+.h-101 {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
 }
+
 .h-100 {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
+    display: flex;
+    flex-direction: column ;}
 @media (min-width: 576px){
 .h-100 {
     max-width: 540px;
@@ -317,4 +304,30 @@ body {
 .El-padre{
     display: grid;
     grid-template-columns: 50%;
+}
+.mapa-general-show {
+
+background-image: url('../img/mapa-general-b.png');
+background-position:
+}
+@media only screen and (max-width: 767px) {
+    .mapa-general-show {
+        display: none;
+    }
+}
+.banner-bottom {
+    background-image:url(../img/Back-para-quien.png);
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    
+}
+.referencia{
+    text-decoration: none;
+    color: var(--colorPrincipal);
+}
+.referencia:hover {
+    color: #0056b3;
+    text-decoration: underline;
 }
