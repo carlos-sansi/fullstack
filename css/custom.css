@@ -317,10 +317,11 @@ background-position:
 }
 .banner-bottom {
     background-image:url(../img/Back-para-quien.png);
-    background-position: top left;
+    background-position: right center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+    padding-bottom: 100px;
+    padding-top: 100px;
     
 }
 .referencia{
@@ -331,3 +332,17 @@ background-position:
     color: #0056b3;
     text-decoration: underline;
 }
+.contenedor-zona2{
+display:grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 30px;
+}
+.contenedor-parte2{
+text-align: center;
+background-color: white;
+border-radius: 10px; 
+margin-top: -20px;
+}
+/*.colocación{
+   
+}*/
