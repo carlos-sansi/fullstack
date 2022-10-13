@@ -54,6 +54,10 @@ body {
 .text-bold{
     font-weight: bold
 }
+.text-justify{
+    text-align: justify;
+    text-justify: inter-word;
+}
 
 .cuadrados {
     color: white;
@@ -311,9 +315,8 @@ body {
 .mapa-general-show {
 
 background-image: url('../img/mapa-general-b.png');
-background-position:
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     .mapa-general-show {
         display: none;
     }
