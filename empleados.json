@@ -1,0 +1,22 @@
+{
+   "empleados":[
+    {
+        "id":1,
+        "nombre":"paco",
+        "puesto":"chofer"
+
+    },
+    {
+        "id":2,
+        "nombre":"jose",
+        "puesto":"profesor"
+
+    },
+    {
+        "id":3,
+        "nombre":"carlos",
+        "puesto":"presidente"
+
+    }
+   ]
+}
